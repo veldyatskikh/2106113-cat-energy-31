@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Sergey Veldyatskikh](https://up.htmlacademy.ru/adaptive/31/user/2106113).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Ермолаев](https://htmlacademy.ru/profile/yermolayev).
 
 ---
 
