@@ -1,0 +1,50 @@
+.catalog-additionally__title {
+  font-family: $secondary-font;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #000000;
+}
+
+.catalog-additionally__list {
+  list-style-type: none;
+}
+
+.catalog-additionally__caption {
+  font-family: $secondary-font;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.catalog-additionally__text {
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #444444;
+}
+
+.catalog-additionally__button {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.button-primary {
+  @include button-primary($secondary-font, #ffffff, #68B738);
+}
+
+.catalog-additionally__gift {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.catalog-additionally__description {
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+}

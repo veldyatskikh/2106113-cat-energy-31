@@ -1,0 +1,28 @@
+.promo__wrapper {
+  color: #ffffff;
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.promo__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.promo__slogan {
+  font-family: $secondary-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.promo__button {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.button-primary {
+  @include button-primary($secondary-font, #ffffff, #68B738);
+}
