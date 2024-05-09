@@ -1,0 +1,66 @@
+.catalog__title {
+  font-family: $secondary-font;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #000000;
+}
+
+.catalog__list {
+  list-style-type: none;
+}
+
+.catalog__item {
+  background-color: #f2f2f2;
+}
+
+.catalog__link {
+  text-decoration: none;
+}
+
+.catalog__caption {
+  font-family: $secondary-font;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.catalog__list-info {
+  list-style-type: none;
+}
+
+.catalog__item-info {
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #444444;
+}
+
+.catalog__button {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.button-primary {
+  @include button-primary($secondary-font, #ffffff, #68B738);
+}
+
+.button-secondary {
+  @include button-secondary($secondary-font, #444444, #F2F2F2);
+}
+
+.catalog__item--more {
+  background-color: #ffffff;
+}
+
+.catalog__text {
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+}
