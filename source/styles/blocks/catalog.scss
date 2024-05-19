@@ -64,3 +64,13 @@
   line-height: 18px;
   color: #444444;
 }
+
+.catalog__item--more::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#plus");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}

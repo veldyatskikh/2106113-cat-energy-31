@@ -4,6 +4,7 @@
 
 .programs__item {
   background-color: #f2f2f2;
+  position: relative;
 }
 
 .programs__title {
@@ -31,4 +32,58 @@
   text-transform: uppercase;
   text-decoration: 0;
   color: #000000;
+}
+
+.programs__item--slim::before {
+  content: "";
+  background-color: #68b738;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+.programs__item--slim::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#cat-weight-loss");
+  background-size: 36px 50px;
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 50px;
+  position: absolute;
+  top: -3px;
+  left: 7px;
+}
+
+.programs__item--pro::before {
+  content: "";
+  background-color: #68b738;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+.programs__item--pro::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#cat-weight-gain");
+  background-size: 67px 28px;
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 28px;
+  position: absolute;
+  top: 11px;
+  left: -9px;
+}
+
+.programs__link::after {
+  content: "";
+  background-color: #000000;
+  mask-image: url("../../icons/stack.svg#arrow");
+  mask-size: 24px 12px;
+  mask-repeat: no-repeat;
+  mask-position: 100%;
+  display: block;
+  width: 24px;
+  height: 12px;
 }

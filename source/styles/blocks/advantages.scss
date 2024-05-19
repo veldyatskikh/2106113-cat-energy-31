@@ -17,3 +17,37 @@
   line-height: 18px;
   color: #444444;
 }
+
+.advantages__item::before {
+  content: "";
+  background-color: #68b738;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.advantages__item--block-1::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#leaf");
+  background-size: 30px 32px;
+}
+
+.advantages__item--block-2::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#powder");
+  background-size: 30px 32px;
+}
+
+.advantages__item--block-3::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#eat");
+  background-size: 30px 32px;
+}
+
+.advantages__item--block-4::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#time");
+  background-size: 30px 32px;
+}
