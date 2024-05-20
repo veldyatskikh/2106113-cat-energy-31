@@ -34,6 +34,14 @@
   color: #000000;
 }
 
+.programs__link:hover {
+  color: #000000;
+}
+
+.programs__link:active {
+  opacity: 0.3;
+}
+
 .programs__item--slim::before {
   content: "";
   background-color: #68b738;

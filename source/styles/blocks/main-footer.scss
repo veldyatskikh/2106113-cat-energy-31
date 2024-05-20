@@ -2,10 +2,6 @@
   list-style-type: none;
 }
 
-.main-footer__link {
-  display: block;
-}
-
 .main-footer__link--vkontakte::before {
   content: "";
   background-color: #666666;
@@ -42,6 +38,21 @@
   display: block;
 }
 
+.main-footer__link--vkontakte:hover::before,
+.main-footer__link--vkontakte:focus::before,
+.main-footer__link--youtube:hover::before,
+.main-footer__link--youtube:focus::before,
+.main-footer__link--telegram:hover::before,
+.main-footer__link--telegram:focus::before {
+  background-color: #68b738;
+}
+
+.main-footer__link--vkontakte:active::before,
+.main-footer__link--youtube:active::before,
+.main-footer__link--telegram:active::before {
+  opacity: 0.3;
+}
+
 .htmlacademy-link {
   font-family: $primary-font;
   font-size: 16px;
@@ -49,6 +60,15 @@
   line-height: 20px;
   color: #444444;
   text-decoration: none;
+}
+
+.htmlacademy-link:hover,
+.htmlacademy-link:focus {
+  color: #444444;
+}
+
+.htmlacademy-link:active {
+  opacity: 0.3;
 }
 
 .htmlacademy-link::after {
@@ -61,4 +81,9 @@
   width: 27px;
   height: 34px;
   display: block;
+}
+
+.htmlacademy-link:hover::after,
+.htmlacademy-link:focus::after {
+  background-color: #68b738;
 }
