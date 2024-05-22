@@ -4,6 +4,7 @@
 
 .programs__item {
   background-color: #f2f2f2;
+  position: relative;
 }
 
 .programs__title {
@@ -15,12 +16,26 @@
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .programs__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
 .programs__description {
   font-family: $primary-font;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   color: #444444;
+}
+
+@media screen and (min-width: 768px) {
+  .programs__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .programs__link {
@@ -31,4 +46,118 @@
   text-transform: uppercase;
   text-decoration: 0;
   color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .programs__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.programs__link:hover {
+  color: #000000;
+}
+
+.programs__link:active {
+  opacity: 0.3;
+}
+
+.programs__item::before {
+  content: "";
+  background-color: #68b738;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .programs__item::before {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .programs__item::before {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.programs__item--slim::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#cat-weight-loss");
+  background-size: 36px 50px;
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 50px;
+  position: absolute;
+  top: -3px;
+  left: 7px;
+}
+
+@media screen and (min-width: 768px) {
+  .programs__item--slim::after {
+    background-size: 140px 194px;
+    width: 140px;
+    height: 194px;
+    top: -11px;
+    left: 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .programs__item--slim::after {
+    background-size: 70px 97px;
+    width: 70px;
+    height: 97px;
+    top: -6px;
+    left: 15px;
+  }
+}
+
+.programs__item--pro::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#cat-weight-gain");
+  background-size: 67px 28px;
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 28px;
+  position: absolute;
+  top: 11px;
+  left: -8px;
+}
+
+@media screen and (min-width: 768px) {
+  .programs__item--pro::after {
+    background-size: 268px 112px;
+    width: 268px;
+    height: 112px;
+    top: 44px;
+    left: -34px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .programs__item--pro::after {
+    background-size: 134px 56px;
+    width: 134px;
+    height: 56px;
+    top: 20px;
+    left: -19px;
+  }
+}
+
+.programs__link::after {
+  content: "";
+  background-color: #000000;
+  mask-image: url("../../icons/stack.svg#arrow");
+  mask-size: 24px 12px;
+  mask-repeat: no-repeat;
+  mask-position: 100%;
+  display: block;
+  width: 24px;
+  height: 12px;
 }
