@@ -2,6 +2,18 @@
   background-color: #eaeaea;
 }
 
+@media screen and (min-width: 768px) {
+  .example__wrapper {
+    background-color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .example__wrapper {
+    background-color: #eaeaea;
+  }
+}
+
 .example__title {
   font-family: $secondary-font;
   font-size: 36px;
@@ -10,12 +22,32 @@
   color: #000000;
 }
 
+@media screen and (min-width: 768px) {
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .example__title {
+    background-color: #ffffff;
+  }
+}
+
 .example__description {
   font-family: $primary-font;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   color: #444444;
+}
+
+@media screen and (min-width: 768px) {
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example__number {
@@ -27,6 +59,13 @@
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .example__number {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
 .example__text {
   font-family: $primary-font;
   font-size: 12px;
@@ -34,6 +73,13 @@
   line-height: 12px;
   color: #444444;
   text-transform: lowercase;
+}
+
+@media screen and (min-width: 768px) {
+  .example__text {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__comment {
@@ -45,7 +91,15 @@
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .example__comment {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 .example__slider {
+  background-color: #eaeaea;
   position: relative;
 }
 
