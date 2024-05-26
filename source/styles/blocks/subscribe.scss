@@ -1,3 +1,8 @@
+.subscribe__wrapper {
+  text-align: center;
+  padding: 40px 20px;
+}
+
 .subscribe__title {
   font-family: $secondary-font;
   font-size: 24px;
@@ -35,12 +40,36 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe__form {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .subscribe__input {
   font-family: $secondary-font;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   color: #444444;
+  width: 280px;
+  height: 56px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  padding-left: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    width: 376px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .subscribe__input {
+    width: 496px;
+  }
 }
 
 .newsletter-button {
@@ -48,7 +77,25 @@
   font-weight: 400;
   line-height: 26px;
   border: none;
+  width: 280px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+@media screen and (min-width: 768px) {
+  .newsletter-button {
+    width: 256px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .newsletter-button {
+    width: 256px;
+  }
+}
+
 
 .button-primary {
   @include button-primary($secondary-font, #ffffff, #68B738);

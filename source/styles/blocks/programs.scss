@@ -1,10 +1,38 @@
+.programs__wrapper {
+  margin: 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .programs__wrapper {
+    margin: 0 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .programs__wrapper {
+    margin: 0 110px;
+  }
+}
+
 .programs__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .programs__item {
   background-color: #f2f2f2;
+  width: 280px;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .programs__item {
+    width: 708px;
+  }
 }
 
 .programs__title {
@@ -14,6 +42,7 @@
   line-height: 37px;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -46,6 +75,7 @@
   text-transform: uppercase;
   text-decoration: 0;
   color: #000000;
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {
