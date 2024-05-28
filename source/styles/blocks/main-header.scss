@@ -1,0 +1,23 @@
+.main-header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header__wrapper {
+  padding: 13px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-header__wrapper {
+    padding: 55px 110px;
+  }
+}

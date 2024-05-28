@@ -20,6 +20,7 @@
   font-weight: 400;
   line-height: 40px;
   color: #000000;
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -50,6 +51,49 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .example__description {
+    width: 436px;
+  }
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .example__list {
+    justify-content: left;
+    gap: 43px;
+  }
+}
+
+.example__item {
+  text-align: center;
+  position: relative;
+}
+
+.example__item::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#border");
+  background-size: 124px 56px;
+  background-repeat: no-repeat;
+  width: 124px;
+  height: 56px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .example__item::before {
+    background-size: 162px 77px;
+    width: 162px;
+    height: 77px;
+  }
+}
+
 .example__number {
   font-family: $secondary-font;
   font-size: 24px;
@@ -73,12 +117,14 @@
   line-height: 12px;
   color: #444444;
   text-transform: lowercase;
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
   .example__text {
     font-size: 14px;
     line-height: 14px;
+    margin: 0;
   }
 }
 
@@ -89,12 +135,20 @@
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .example__comment {
     font-size: 20px;
     line-height: 20px;
+    text-align: end;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .example__comment {
+    text-align: start;
   }
 }
 
