@@ -10,6 +10,3 @@ n.addEventListener('click', ()=>{
   n.classList.toggle('main-nav__toggle--close');
 }
 );
-
-/* слайдер*/
-
