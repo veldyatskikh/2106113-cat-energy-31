@@ -1,7 +1,7 @@
 .main-footer__wrapper {
-  min-width: 320px;
-  text-align: center;
+  width: 100%;
   padding: 40px 20px;
+  text-align: center;
   box-sizing: border-box;
   background-color: #f2f2f2;
 }
@@ -22,13 +22,40 @@
   }
 }
 
+.main-footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-footer-logo {
+    margin: 0;
+    padding: 6px 0;
+    align-items: center;
+  }
+}
+
+.main-footer__logo-name {
+  display: block;
+  margin: 0 auto;
+}
+
 .main-footer-list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 19px 0;
   display: flex;
   justify-content: center;
   gap: 24px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+@media screen and (min-width: 768px) {
+  .main-footer-list {
+    border: none;
+    padding: 7px 0;
+  }
 }
 
 .main-footer__link--vkontakte::before {
@@ -92,6 +119,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -100,6 +128,7 @@
     justify-content: space-between;
     background-color: #f2f2f2;
     gap: 23px;
+    margin: 0;
   }
 }
 
