@@ -1,27 +1,62 @@
 .promo__wrapper {
+  width: 100%;
   color: #ffffff;
   background: linear-gradient(to top, #ffffff 178px, rgba(104, 183, 56, 0.85) 178px), image-set("../../images/index-cat-bg-mobile@1x.png" 1x, "../../images/index-cat-bg-mobile@2x.png" 2x);
   background-repeat: no-repeat;
-  width: 320px;
+  background-position: top;
   text-align: center;
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
   .promo__wrapper {
     color: #000000;
     background: #ffffff;
-    width: 709px;
+    width: 100%;
     text-align: left;
+    margin: 0;
+    padding: 0 30px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .promo__wrapper {
+    position: static;
+    background: none;
+    min-height: 580px;
+    padding: 0 110px;
+    margin-bottom: 82px;
+    display: block;
+  }
+}
+
+/* @media screen and (min-width: 1440px) {
+  .promo__wrapper {
     color: #000000;
     background: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%), image-set("../../images/index-cat-bg-desktop@1x.png" 1x, "../../images/index-cat-bg-desktop@2x.png" 2x);
     width: 1440px;
+  }
+} */
+
+@media screen and (min-width: 1440px) {
+  .promo__wrapper::before {
+    content: "";
+    background: linear-gradient(to right, #ffffff 0, rgba(104, 183, 56, 0.85) 0), image-set("../../images/index-cat-bg-desktop@1x.png" 1x, "../../images/index-cat-bg-desktop@2x.png" 2x);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 720px;
+    height: 694px;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    display: block;
+    z-index: -1;
   }
 }
 
@@ -38,6 +73,16 @@
   .promo__title {
     font-size: 60px;
     line-height: 60px;
+    width: 420px;
+    padding: 65px 90px 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .promo__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 110px 0 40px 80px;
   }
 }
 
@@ -46,12 +91,23 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
+  margin: 25px 0 29px;
 }
 
 @media screen and (min-width: 768px) {
   .promo__slogan {
     font-size: 20px;
     line-height: 20px;
+    text-transform: uppercase;
+    margin: 0 0 21px;
+    padding: 0 90px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .promo__slogan {
+    padding: 0 0 52px 80px;
+    margin: 0;
   }
 }
 
@@ -66,22 +122,53 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  display: flex;
-  width: 280px;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .promo__button {
+    width: 244px;
     font-size: 20px;
     line-height: 26px;
-    margin: 0;
+    padding: 14px 0;
+    position: absolute;
+    top: 295px;
+    left: 120px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .promo__button {
+    width: 244px;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 0;
+    position: absolute;
+    top: 456px;
+    left: 190px;
   }
 }
 
 .button-primary {
   @include button-primary($secondary-font, #ffffff, #68B738);
+}
+
+.promo__image-wrapper {
+  display: block;
+}
+
+.promo__image {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .promo__image {
+    position: absolute;
+    top: 143px;
+    left: 557px;
+  }
 }
