@@ -7,6 +7,7 @@
   padding: 26px 20px;
   box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -24,6 +25,7 @@
     top: 95px;
     left: 110px;
     background-color: #ffffff;
+    z-index: 3;
   }
 }
 
@@ -77,19 +79,4 @@
   .contacts__adress-description:not(:last-child) {
     margin-bottom: 19px;
   }
-}
-
-.map__wrapper {
-  width: 100%;
-  height: 100%;
-}
-
-.map__wrapper picture {
-  display: none;
-}
-
-.map__wrapper iframe {
-  border: none;
-  display: block;
-  width: 100%;
 }

@@ -113,6 +113,7 @@
   padding-left: 13px;
   width: 100%;
   margin-bottom: 16px;
+  border: 1px solid #e7e7e7;
 }
 
 @media screen and (min-width: 768px) {
@@ -122,6 +123,19 @@
   }
 }
 
+.subscribe__input:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.subscribe__input:focus {
+  border: 2px solid #444444;
+}
+
+.subscribe__input:user-invalid {
+  border: none;
+  outline: 2px solid #ff8282;
+}
+
 @media screen and (min-width: 1440px) {
   .subscribe__input {
     width: 496px;
@@ -129,6 +143,7 @@
 }
 
 .newsletter-button {
+  @include button-primary($secondary-font, #ffffff, #68B738);
   font-size: 20px;
   font-weight: 400;
   line-height: 26px;
@@ -137,6 +152,16 @@
   width: 100%;
   padding: 15px 0;
   text-align: center;
+}
+
+.newsletter-button:hover,
+.newsletter-button:focus {
+  background-color: #5eaa2f;
+}
+
+.newsletter-button:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 @media screen and (min-width: 768px) {
@@ -150,9 +175,4 @@
   .newsletter-button {
     width: 256px;
   }
-}
-
-
-.button-primary {
-  @include button-primary($secondary-font, #ffffff, #68B738);
 }
