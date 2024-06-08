@@ -133,7 +133,8 @@
   }
 }
 
-.programs__link:hover {
+.programs__link:hover,
+.programs__link:focus {
   color: #000000;
 }
 
@@ -242,10 +243,22 @@
   content: "";
   background-color: #000000;
   mask-image: url("../../icons/stack.svg#arrow");
-  mask-size: 24px 12px;
+  mask-size: 32px 12px;
   mask-repeat: no-repeat;
   mask-position: 100%;
   display: block;
-  width: 24px;
+  width: 32px;
   height: 12px;
+  transition: width 0.3s, transform 0.3s;
+}
+
+.programs__link:hover::after,
+.programs__link:focus::after {
+  width: 32px;
+  transform: scaleX(1.35);
+}
+
+.programs__link:active::after {
+  width: 32px;
+  transform: scaleX(1.35);
 }

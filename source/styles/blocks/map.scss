@@ -1,0 +1,42 @@
+.map__wrapper {
+  width: 100%;
+  height: 362px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  .map__wrapper {
+    height: 400px;
+  }
+}
+
+.map__location {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .map__location {
+    height: 400px;
+  }
+}
+
+.map__interactive {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 362px;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .map__interactive {
+    height: 400px;
+  }
+}

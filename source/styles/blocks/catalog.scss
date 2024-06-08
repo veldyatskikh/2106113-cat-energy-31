@@ -158,6 +158,7 @@
 }
 
 .catalog__button {
+  @include button-primary($secondary-font, #ffffff, #68B738);
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -168,18 +169,34 @@
   text-align: center;
 }
 
+.catalog__button:hover,
+.catalog__button:focus {
+  background-color: #5eaa2f;
+}
+
+.catalog__button:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 @media screen and (min-width: 768px) {
   .catalog__button {
     margin-top: auto;
   }
 }
 
-.button-primary {
-  @include button-primary($secondary-font, #ffffff, #68B738);
+.catalog__button--more {
+  @include button-secondary($secondary-font, #444444, #F2F2F2);
 }
 
-.button-secondary {
-  @include button-secondary($secondary-font, #444444, #F2F2F2);
+.catalog__button--more:hover,
+.catalog__button--more:focus {
+  background-color: #ebebeb;
+}
+
+.catalog__button--more:active {
+  background-color: #ebebeb;
+  color: #444444;
 }
 
 .catalog__item--more {

@@ -27,6 +27,15 @@
   margin-bottom: 20px;
 }
 
+.main-footer-logo:hover,
+.main-footer-logo:focus {
+  opacity: 0.8;
+}
+
+.main-footer-logo:active {
+  opacity: 0.6;
+}
+
 @media screen and (min-width: 768px) {
   .main-footer-logo {
     margin: 0;
@@ -106,10 +115,11 @@
 .main-footer__link--vkontakte:active::before,
 .main-footer__link--youtube:active::before,
 .main-footer__link--telegram:active::before {
+  background-color: #68b738;
   opacity: 0.3;
 }
 
-.htmlacademy-link {
+.main-footer__htmlacademy-link {
   font-family: $primary-font;
   font-size: 16px;
   font-weight: 400;
@@ -123,7 +133,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .htmlacademy-link {
+  .main-footer__htmlacademy-link {
     display: flex;
     justify-content: space-between;
     background-color: #f2f2f2;
@@ -132,16 +142,16 @@
   }
 }
 
-.htmlacademy-link:hover,
-.htmlacademy-link:focus {
+.main-footer__htmlacademy-link:hover,
+.main-footer__htmlacademy-link:focus {
   color: #444444;
 }
 
-.htmlacademy-link:active {
+.main-footer__htmlacademy-link:active {
   opacity: 0.3;
 }
 
-.htmlacademy-link::after {
+.main-footer__htmlacademy-link::after {
   content: "";
   background-color: #666666;
   mask-image: url("../../icons/stack.svg#htmlacademy-logo");
@@ -153,7 +163,12 @@
   display: block;
 }
 
-.htmlacademy-link:hover::after,
-.htmlacademy-link:focus::after {
+.main-footer__htmlacademy-link:hover::after,
+.main-footer__htmlacademy-link:focus::after {
   background-color: #68b738;
+}
+
+.main-footer__htmlacademy-link:active::after {
+  background-color: #68b738;
+  opacity: 0.3;
 }

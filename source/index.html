@@ -10,6 +10,8 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180x180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" type="font/woff2" crossorigin="anonymous" as="font">
+  <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" type="font/woff2" crossorigin="anonymous" as="font">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -48,11 +50,14 @@
         <h2 class="promo__title">Функциональное питание для котов</h2>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <picture class="promo__image-wrapper">
+          <source type="image/webp" media="(min-width: 1440px)" width="552" height="499" srcset="images/promo-desktop@1x.webp 1x, images/promo-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" width="709" height="609" srcset="images/promo-tablet@1x.webp 1x, images/promo-tablet@2x.webp 2x">
+          <source type="image/webp" width="280" height="270" srcset="imgaes/promo-mobile@1x.webp 1x, images/promo-mobile@2x.webp 2x">
           <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/promo-desktop@1x.png 1x, images/promo-desktop@2x.png 2x">
           <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/promo-tablet@1x.png 1x, images/promo-tablet@2x.png 2x">
           <img class="promo__image" src="images/promo-mobile@1x.png" srcset="images/promo-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая банка с питанием Cat Energy Pro со вкусом курицы">
         </picture>
-        <a class="promo__button button-primary" href="#">Подобрать программу</a>
+        <a class="promo__button" href="#">Подобрать программу</a>
       </div>
     </section>
     <section class="programs" data-test="programs">
@@ -110,12 +115,16 @@
         <div class="example__slider">
           <div class="example__slider-before">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" width="560" height="512" srcset="images/slider-before-tablet-desktop.webp 1x, images/slider-before-tablet-desktop@2x.webp 2x">
+              <source type="image/webp" width="280" height="256" srcset="images/slider-before-mobile@1x.webp 1x, images/slider-before-mobile@2x.webp 2x">
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-before-tablet-desktop@1x.png 1x, images/slider-before-tablet-desktop@2x.png 2x">
               <img class="example__slider-image" src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Фотография до: кот с лишним весом">
             </picture>
           </div>
           <div class="example__slider-after">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" width="560" height="512" srcset="images/slider-after-tablet-desktop.webp 1x, images/slider-after-tablet-desktop@2x.webp 2x">
+              <source type="image/webp" width="280" height="256" srcset="images/slider-after-mobile@1x.webp 1x, images/slider-after-mobile@2x.webp 2x">
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-after-tablet-desktop@1x.png 1x, images/slider-after-tablet-desktop@2x.png 2x">
               <img class="example__slider-image" src="images/slider-after-mobile@1x.png" srcset="images/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Фотография после: худой кот">
             </picture>
@@ -141,7 +150,7 @@
           <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
           <img class="map__location" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта с местоположением офиса">
         </picture>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4753.526179166685!2d30.32355764841993!3d59.93858748165086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1716911425965!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map__interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4753.526179166685!2d30.32355764841993!3d59.93858748165086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1716911425965!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
@@ -164,7 +173,7 @@
             <span class="visually-hidden">Мы в Телеграме</span></a>
         </li>
       </ul>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="main-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">
         <span>HTML Academy</span>
       </a>
     </div>

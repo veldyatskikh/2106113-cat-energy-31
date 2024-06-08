@@ -153,16 +153,18 @@
   transform: translate(-50%);
   background-color: #eaeaea;
   padding: 0 14px;
+  width: 87px;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 768px) {
   .example__text {
     background-color: #ffffff;
-    width: max-content;
     font-size: 14px;
     line-height: 14px;
     top: 63px;
     left: 50%;
+    width: 142px;
   }
 }
 
