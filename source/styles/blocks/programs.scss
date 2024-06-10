@@ -249,16 +249,18 @@
   display: block;
   width: 32px;
   height: 12px;
-  transition: width 0.3s, transform 0.3s;
+  transition: 0.5s;
 }
 
 .programs__link:hover::after,
 .programs__link:focus::after {
   width: 32px;
   transform: scaleX(1.35);
+  transform-origin: left;
 }
 
 .programs__link:active::after {
   width: 32px;
   transform: scaleX(1.35);
+  transform-origin: left;
 }
