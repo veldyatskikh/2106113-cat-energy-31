@@ -1,1 +1,0 @@
-document.querySelector(".main-nav__list").classList.add("main-nav__list--close");document.querySelector(".main-nav__toggle").classList.add("main-nav__toggle--open");var n=document.querySelector(".main-nav__list"),e=document.querySelector(".main-nav__toggle");e.addEventListener("click",()=>{n.classList.toggle("main-nav__list--open"),e.classList.toggle("main-nav__toggle--close")});
