@@ -17,25 +17,27 @@
 
 <body class="page__body">
   <header class="main-header" data-test="header">
-    <div class="main-header__wrapper">
-      <a class="main-header__logo main-header__logo--picture" href="index.html">
-        <picture>
-          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg">
-          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg">
-          <img class="main-header__logo main-header__logo-picture" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-        </picture>
-      </a>
-      <a class="main-header__logo main-header__logo--text" href="index.html">
-        <picture>
-          <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-text.svg">
-          <img class="main-header__logo main-header__logo-name" src="images/logo/logo-text.svg" width="101" height="18" alt="Cat Energy">
-        </picture>
-      </a>
+    <div class="main-header__wrapper main-header__wrapper--no-js">
+      <div class="main-header__logo">
+        <a class="main-header__logo-link" href="index.html">
+          <picture>
+            <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg">
+            <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg">
+            <img class="main-header__logo-picture" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+          </picture>
+        </a>
+        <a class="main-header__logo-link" href="index.html">
+          <picture>
+            <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-text.svg">
+            <img class="main-header__logo-text" src="images/logo/logo-text.svg" width="101" height="18" alt="Cat Energy">
+          </picture>
+        </a>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--close" type="button">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list main-nav__list--open">
+        <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current"><a href="#">Главная</a></li>
           <li class="main-nav__item"><a href="catalog.html">Каталог продукции</a></li>
           <li class="main-nav__item"><a href="#">Подбор программы</a></li>
@@ -66,12 +68,12 @@
           <li class="programs__item programs__item--slim">
             <h2 class="programs__title">Похудение</h2>
             <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="programs__link" href="#">Каталог slim</a>
+            <a class="programs__link" href="catalog.html">Каталог slim</a>
           </li>
           <li class="programs__item programs__item--pro">
             <h2 class="programs__title">Набор массы</h2>
             <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="programs__link" href="#">Каталог pro</a>
+            <a class="programs__link" href="catalog.html">Каталог pro</a>
           </li>
         </ul>
       </div>
@@ -115,7 +117,7 @@
         <div class="example__slider">
           <div class="example__slider-before">
             <picture>
-              <source type="image/webp" media="(min-width: 768px)" width="560" height="512" srcset="images/slider-before-tablet-desktop.webp 1x, images/slider-before-tablet-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" width="560" height="512" srcset="images/slider-before-tablet-desktop@1x.webp 1x, images/slider-before-tablet-desktop@2x.webp 2x">
               <source type="image/webp" width="280" height="256" srcset="images/slider-before-mobile@1x.webp 1x, images/slider-before-mobile@2x.webp 2x">
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-before-tablet-desktop@1x.png 1x, images/slider-before-tablet-desktop@2x.png 2x">
               <img class="example__slider-image" src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Фотография до: кот с лишним весом">
@@ -123,7 +125,7 @@
           </div>
           <div class="example__slider-after">
             <picture>
-              <source type="image/webp" media="(min-width: 768px)" width="560" height="512" srcset="images/slider-after-tablet-desktop.webp 1x, images/slider-after-tablet-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" width="560" height="512" srcset="images/slider-after-tablet-desktop@1x.webp 1x, images/slider-after-tablet-desktop@2x.webp 2x">
               <source type="image/webp" width="280" height="256" srcset="images/slider-after-mobile@1x.webp 1x, images/slider-after-mobile@2x.webp 2x">
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-after-tablet-desktop@1x.png 1x, images/slider-after-tablet-desktop@2x.png 2x">
               <img class="example__slider-image" src="images/slider-after-mobile@1x.png" srcset="images/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Фотография после: худой кот">

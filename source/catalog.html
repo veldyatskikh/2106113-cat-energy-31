@@ -17,27 +17,29 @@
 
 <body class="page__body">
   <header class="main-header" data-test="header">
-    <div class="main-header__wrapper">
-      <a class="main-header__logo main-header__logo--picture" href="index.html">
-        <picture>
-          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg">
-          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg">
-          <img class="main-header__logo main-header__logo-picture" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-        </picture>
-      </a>
-      <a class="main-header__logo main-header__logo--text" href="index.html">
-        <picture>
-          <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-text.svg">
-          <img class="main-header__logo main-header__logo-name" src="images/logo/logo-text.svg" width="101" height="18" alt="Cat Energy">
-        </picture>
-      </a>
+    <div class="main-header__wrapper main-header__wrapper--no-js">
+      <div class="main-header__logo">
+        <a class="main-header__logo-link" href="index.html">
+          <picture>
+            <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg">
+            <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg">
+            <img class="main-header__logo-picture" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+          </picture>
+        </a>
+        <a class="main-header__logo-link" href="index.html">
+          <picture>
+            <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-text.svg">
+            <img class="main-header__logo-text" src="images/logo/logo-text.svg" width="101" height="18" alt="Cat Energy">
+          </picture>
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item-catalog"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item main-nav__item-catalog main-nav__item--current"><a href="#">Каталог продукции</a></li>
+          <li class="main-nav__item main-nav__item-catalog  main-nav__item--current"><a href="catalog.html">Каталог продукции</a></li>
           <li class="main-nav__item main-nav__item-catalog"><a href="#">Подбор программы</a></li>
         </ul>
       </nav>

@@ -11,6 +11,16 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .map__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+  }
+}
+
 .map__location {
   width: 100%;
   display: block;
@@ -22,6 +32,12 @@
 @media screen and (min-width: 768px) {
   .map__location {
     height: 400px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .map__location {
+    height: 100%;
   }
 }
 
@@ -38,5 +54,11 @@
 @media screen and (min-width: 768px) {
   .map__interactive {
     height: 400px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .map__interactive {
+    height: 100%;
   }
 }
